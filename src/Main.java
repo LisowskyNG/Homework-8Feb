@@ -55,13 +55,11 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
-        int treasure = 29_000;
-        int yearPercent = 7;
+        int monthPercent = 7;
         int month = 1;
-        float deadMansChest = 15_000f;
+        float deadMansChest = 15_000F;
         while (deadMansChest < 12_000_000) {
-            deadMansChest = deadMansChest + treasure;
-            deadMansChest = deadMansChest + deadMansChest*yearPercent/100/12;
+            deadMansChest = deadMansChest + deadMansChest*monthPercent/100;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений " + deadMansChest + " рублей");
         }
@@ -71,13 +69,11 @@ public class Main {
     public static void task5 () {
         System.out.println("Задача 5");
         // Пишем код для задачи 5
-        int treasure = 29_000;
-        int yearPercent = 7;
+        int monthPercent = 7;
         int month = 1;
-        float deadMansChest = 15_000f;
+        float deadMansChest = 15_000F;
         while (deadMansChest < 12_000_000) {
-            deadMansChest = deadMansChest + treasure;
-            deadMansChest = deadMansChest + deadMansChest*yearPercent/100/12;
+            deadMansChest = deadMansChest + deadMansChest*monthPercent/100;
             month++;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений " + deadMansChest + " рублей");
@@ -90,11 +86,11 @@ public class Main {
     public static void task6() {
         System.out.println("Задача 6");
 
-        int yearPercent = 7;
+        int monthPercent = 7;
         int month = 1;
-        float deadMansChest = 15_000;
+        float deadMansChest = 15_000F;
         for (; month <= 9*12;) {
-            deadMansChest = deadMansChest + deadMansChest * yearPercent / 100 / 12;
+            deadMansChest = deadMansChest + deadMansChest * monthPercent / 100;
             month++;
             if (month %6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений " + deadMansChest + " рублей");
